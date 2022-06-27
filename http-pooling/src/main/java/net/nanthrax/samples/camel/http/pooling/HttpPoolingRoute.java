@@ -10,7 +10,7 @@ public class HttpPoolingRoute extends RouteBuilder {
                 .log("Calling http pooling endpint")
                 // default setup, one pool per camel context
                 .to("http://localhost:8080/mock?connectionsPerRoute=20&maxTotalConnections=200")
-                // we can share a clientConnectionManager across several contexts
+                // we can share a clientConnectionManager across several contexts/endpoints and so use a "global" pooling
                 // .to("http://localhost:8080/mock?clientConnectionManager=#myConnectionManager")
                 .to("log:http");
     }
