@@ -1,4 +1,4 @@
-package net.nanthrax.samples.camel.http.mock;
+package net.nanthrax.samples.camel.geocluster;
 
 import jakarta.servlet.Servlet;
 import org.eclipse.jetty.server.HttpConnectionFactory;
@@ -25,8 +25,11 @@ public class JettyWebContainer {
         servletContextHandler.setContextPath("/");
         server.setHandler(servletContextHandler);
 
-        Servlet servlet = new MockServlet();
-        servletContextHandler.addServlet(servlet.getClass(), "/mock");
+        Servlet texasServlet = new GeoTexasServlet();
+        servletContextHandler.addServlet(texasServlet.getClass(), "/texas");
+
+        Servlet michiganServlet = new GeoMichiganServlet();
+        servletContextHandler.addServlet(michiganServlet.getClass(), "/michigan");
 
         server.start();
     }

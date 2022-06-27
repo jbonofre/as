@@ -1,4 +1,4 @@
-package net.nanthrax.samples.camel.http.mock;
+package net.nanthrax.samples.camel.geocluster;
 
 public class Main {
 

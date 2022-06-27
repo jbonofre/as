@@ -15,9 +15,8 @@
     </properties>
 
     <modules>
-        <module>http-mock</module>
-        <module>http-pooling</module>
-        <module>http-timeout</module>
+        <module>geo-cluster</module>
+        <module>proxy-service</module>
     </modules>
 
     <dependencyManagement>

@@ -13,7 +13,7 @@
     </parent>
 
     <groupId>net.nanthrax.samples.camel</groupId>
-    <artifactId>http-mock</artifactId>
+    <artifactId>geo-cluster</artifactId>
 
     <properties>
         <jetty.version>11.0.9</jetty.version>
