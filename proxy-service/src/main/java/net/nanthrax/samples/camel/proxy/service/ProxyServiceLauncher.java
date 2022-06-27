@@ -1,13 +1,13 @@
-package net.nanthrax.samples.camel.http.pooling;
+package net.nanthrax.samples.camel.proxy.service;
 
 import org.apache.camel.impl.DefaultCamelContext;
 
-public class HttpPoolingLauncher {
+public class ProxyServiceLauncher {
 
     public void start() throws Exception {
         DefaultCamelContext camelContext = new DefaultCamelContext();
         camelContext.setAutoStartup(false);
-        camelContext.addRoutes(new HttpPoolingRoute());
+        camelContext.addRoutes(new ProxyServiceRoute());
         camelContext.start();
     }
 
